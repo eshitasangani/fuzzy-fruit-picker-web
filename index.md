@@ -9,6 +9,8 @@ Mattie Lee (mll264), Eshita Sangani (ens57), Janeth Manyalla (jim59)
 
 ## Project Video
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oCqUU-t3aZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Introduction
 
 ## Design and Testing
