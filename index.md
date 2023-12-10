@@ -1,28 +1,35 @@
 ---
 layout: page
-title: Bootstrap 4 Github Pages
+title: The Fuzzy Fruit Picker (Crabby)
 ---
 
-[![GitHub Repo stars](https://img.shields.io/github/stars/nicolas-van/bootstrap-4-github-pages?style=social)](https://github.com/nicolas-van/bootstrap-4-github-pages)
+Mattie Lee (mll264), Eshita Sangani (ens57), Janeth Manyalla (jim59)
 
-A [Bootstrap 4](https://getbootstrap.com/) template project for [Github Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/).
+* The objective of our final project was to create a robotic arm that used machine learning to identify different colored “fruits” (colored puff balls) and sort them into bins. 
 
-* A full Bootstrap 4 theme usable both on Github Pages and with a standalone Jekyll.
-* Recompiles Bootstrap from SCSS files, which allows to customize Bootstrap's variables and use Bootstrap themes.
-* Full support of Bootstrap's JavaScript plugins.
-* Supports all features of Github Pages and Jekyll.
+## Project Video
 
-## Setup Guide
+## Introduction
 
-### Create a repository from this template
+## Design and Testing
 
+## Results
+
+## Conclusion
+
+## Future Work
+
+## Budget
+
+## Reference
+
+<!-- ### Create a repository from this template -->
+<!-- 
 * [Go to this repository page on Github](https://github.com/nicolas-van/bootstrap-4-github-pages).
 * Click the `Star` button on the top right. (OK, this step is facultative, but that would make you a nice person)
 * Click the `Use this template` button on the top right of the page.
 
-### Choose a name for your repository
 
-Here we have two possibilities:
 
 * **You want a user or organization website**
 
@@ -110,4 +117,4 @@ I'm a fan of Github Pages for the possibilities it offers to anyone to publish a
 
 * [Easy Markdown to Github Pages](https://nicolas-van.github.io/easy-markdown-to-github-pages/)
 * [Parcel Github Pages Boilerplate](https://github.com/nicolas-van/parcel-github-pages-boilerplate)
-
+ -->
