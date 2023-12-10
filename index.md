@@ -13,6 +13,10 @@ Mattie Lee (mll264), Eshita Sangani (ens57), Janeth Manyalla (jim59)
 
 ## Introduction
 
+
+
+
+
 ## Design and Testing
 
 ## Results
@@ -23,6 +27,20 @@ Mattie Lee (mll264), Eshita Sangani (ens57), Janeth Manyalla (jim59)
 
 ## Budget
 
+* Raspberry Pi 4
+* Adafruit PiTFT
+* [MeArm Robot Arm] (https://www.instructables.com/MeArm-Robot-Arm-Your-Robot-V10/)
+* [Raspberry Pi Camera Module] https://www.adafruit.com/product/5658
+* Raspberry PI B+ GPIO Adapter Plate 40-Pin for Breadboard Expansion Board
+* GPIO Ribbon Cable
+* 4 standard servos
+* 2 Breadboards
+* [Bag of Fuzzy Balls] ($10) (https://www.amazon.com/WAU-Crafts-100-Pieces-Multicolored/dp/B086ZZXVQD/ref=sr_1_8?crid=2CSQ0AZD8E8IS&keywords=pompoms&qid=1702185022&sprefix=pompoms%2Caps%2C99&sr=8-8)
+* Resistors (10kΩ + 1kΩ)
+* Wires
+* Wooden structure
+
+
 ## Reference
 
 <!-- ### Create a repository from this template -->
@@ -30,7 +48,6 @@ Mattie Lee (mll264), Eshita Sangani (ens57), Janeth Manyalla (jim59)
 * [Go to this repository page on Github](https://github.com/nicolas-van/bootstrap-4-github-pages).
 * Click the `Star` button on the top right. (OK, this step is facultative, but that would make you a nice person)
 * Click the `Use this template` button on the top right of the page.
-
 
 
 * **You want a user or organization website**
