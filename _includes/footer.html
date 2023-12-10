@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Website Title</title>
+  <title>{{ site.title | escape }}</title>
 
   <!-- Link to your CSS file -->
   <link rel="stylesheet" type="text/css" href="_includes/styles.css">
@@ -13,9 +13,13 @@
 <div class="py-3 border-top">
   <div class="container">
 
-    <p class="h6 mb-2">{{ site.title | escape }}</p>
-
     <div class="row">
+
+      <div class="col-sm text-right">
+        <p>
+          <a href="https://github.com/eshitasangani/robotic-fruit-sorter/">Project Code</a>
+        </p>
+      </div>
 
       <div class="col-sm">
         <ul class="list-unstyled">
@@ -36,14 +40,9 @@
         </ul>
       </div>
 
-      <div class="col-sm text-right">
-        <p>{{- site.description | escape -}}</p>
-        <p>
-          <a href="https://github.com/eshitasangani/robotic-fruit-sorter/">Project Code</a>
-        </p>
-      </div>
-
     </div>
+
+    <p>{{- site.description | escape -}}</p>
 
   </div>
 </div>
