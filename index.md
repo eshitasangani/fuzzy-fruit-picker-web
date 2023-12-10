@@ -29,19 +29,25 @@ Mattie Lee (mll264), Eshita Sangani (ens57), Janeth Manyalla (jim59)
 
 * Raspberry Pi 4
 * Adafruit PiTFT
-* [MeArm Robot Arm] (https://www.instructables.com/MeArm-Robot-Arm-Your-Robot-V10/)
-* [Raspberry Pi Camera Module] https://www.adafruit.com/product/5658
+* [MeArm Robot Arm](https://www.instructables.com/MeArm-Robot-Arm-Your-Robot-V10/)
+* [Raspberry Pi Camera Module]https://www.adafruit.com/product/5658
 * Raspberry PI B+ GPIO Adapter Plate 40-Pin for Breadboard Expansion Board
 * GPIO Ribbon Cable
 * 4 standard servos
 * 2 Breadboards
-* [Bag of Fuzzy Balls] ($10) (https://www.amazon.com/WAU-Crafts-100-Pieces-Multicolored/dp/B086ZZXVQD/ref=sr_1_8?crid=2CSQ0AZD8E8IS&keywords=pompoms&qid=1702185022&sprefix=pompoms%2Caps%2C99&sr=8-8)
+* [Bag of Fuzzy Balls](https://www.amazon.com/WAU-Crafts-100-Pieces-Multicolored/dp/B086ZZXVQD/ref=sr_1_8?crid=2CSQ0AZD8E8IS&keywords=pompoms&qid=1702185022&sprefix=pompoms%2Caps%2C99&sr=8-8)
 * Resistors (10kΩ + 1kΩ)
 * Wires
 * Wooden structure
 
+## References
 
-## Reference
+* [MeArm Robot Arm Instructable](https://www.instructables.com/MeArm-Robot-Arm-Your-Robot-V10/)
+* [Mearm inverse kinematics code](https://github.com/aquila12/me-arm-ik)
+* [OpenCV morphological transformations](https://docs.opencv.org/3.4/d9/d61/tutorial_py_morphological_ops.html)
+* [OpenCV Color detection code](https://www.geeksforgeeks.org/multiple-color-detection-in-real-time-using-python-opencv/#)
+* [OpenCV object tracking code](https://www.opencv-srf.com/2010/09/object-detection-using-color-seperation.html)
+
 
 <!-- ### Create a repository from this template -->
 <!-- 
