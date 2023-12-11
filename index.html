@@ -41,7 +41,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">The Fuzzy Fruit Picker (aka Crabby)</a>
+          <a class="navbar-brand" href="#">Project name</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -86,24 +86,56 @@
               </p>
       </div>
 
+      <hr id='obj'>
+
+      <div class="row">
+          <div class="col-md-4" style="text-align:center;">
+          <img class="img-rounded" src="pics/fuzzy.jpg" alt="Generic placeholder image" width="240" height="240">
+          </div>
+          <div class="col-md-8" style="font-size:18px;">
+          <h2>Project Objective:</h2>
+          <ul>
+              <li>to create a robotic arm that used machine learning to identify different colored “fruits” (colored puff balls) and sort them into bins.</li>
+                <!-- <li>some other important objectives.</li>
+            <li>some not-that-important objectives.</li> -->
+          </ul>
+          </div>
+      </div>
+
       <hr id="design">
 
       <div style="text-align:center;">
         <h2>Design</h2>
         <p style="text-align: left;padding: 0px 30px;">
 
-          Using a Raspberry Pi, this project utilizes the PiCamera for color detection of various fruits 
-          (as puff balls) using OpenCV. Once the fruit is identified, the meArm robotic arm uses inverse 
-          kinematics to sort them into different bins, by enabling precise control of its servo motors. 
-          The code also incorporates GPIO event handling, allowing the user to exit the program or shut 
-          down the Raspberry Pi using external buttons.
+          After having a rough idea and sketch of what we were going to build, our project went 
+          through different stages of design and testing that are outlined in the phases below.
 
         </p>
-      </div>
 
-      <div style="text-align:center;">
-              <h2>Design</h2>
-              <p style="text-align: left;padding: 0px 30px;">L ex. qudiam.</p>
+        <h3>Phase I: MeArm Robot Assembly & Servo Testing</h3>
+        <p style="text-align: left;padding: 0px 30px;">
+
+          <p>
+            To enable our picking mechanism, we decided to use the MeArm Robot v1.0 kit. We chose the MeArm robot design 
+          because it is a simple and sturdy enough structure for the purpose of our project, which used colored small, 
+          fluffy, light-weight pom poms to represent different types of fruits. The arm is designed with three Degrees 
+          of Freedom (3DOF), a square-like base with a pivot center to rotate the arm from left to right accordingly and 
+          elbow and shoulder pivots to elongate or shorten the gripper reach around a three-dimensional coordinate space. 
+          We used four standard servo motors with an angle range from (-π, π) radians for the three pivots and the gripper. 
+          </p>
+
+          <p>
+            After consultation with Prof. Skovira, we were able to acquire the MeArm robot kit from a previous project that 
+          used a similar design but was missing a gripper, which we were then able to obtain through laser-cutting a 
+          plastic sheet using available open-source CAD design for the v1.0 kit. Since most of the arm was already 
+          pre-assembled, we disassembled parts of the arm to test the servo motors and also assembled part of the 
+          gripper and tested its functionality. After testing the servos, we assembled the full robot arm and configured 
+          the servo positions to particular angle degrees to ensure that the arm does not stretch and withdraw that it 
+          collides with its base or other areas beyond its reach.
+          </p>
+          
+        </p>
       </div>
 
     <hr id='drawings'>
@@ -132,23 +164,23 @@
     <div class="row" style="text-align:center;">
           <h2>Work Distribution</h2>
           <div style="text-align:center;">
-              <img class="img-rounded" src="pics/group.jpg" alt="Generic placeholder image" style="width:80%;">
+              <img class="img-rounded" src="pics/group.png" alt="Proj" style="width:80%;">
               <h4>Project group picture</h4>
           </div>
           <div class="col-md-6" style="font-size:14px">
-              <img class="img-rounded" src="pics/a.png" alt="Generic placeholder image" width="240" height="240">
+              <img class="img-rounded" src="pics/eshita.png" alt="Eshita" width="240" height="240">
               <h3>Eshita</h3>
               <p class="lead">ens57@cornell.edu</p>
               <p>TEXT 
           </div>
           <div class="col-md-6" style="font-size:14px">
-              <img class="img-rounded" src="pics/b.png" alt="Generic placeholder image" width="240" height="240">
+              <img class="img-rounded" src="pics/b.png" alt="Mattie" width="240" height="240">
               <h3>Mattie</h3>
               <p class="lead">mll264@cornell.edu</p>
               <p>TEXT
           </div>
           <div class="col-md-6" style="font-size:14px">
-            <img class="img-rounded" src="pics/a.png" alt="Generic placeholder image" width="240" height="240">
+            <img class="img-rounded" src="pics/a.png" alt="Janeth" width="240" height="240">
             <h3>Janeth</h3>
             <p class="lead">jim59@cornell.edu</p>
             <p>TEXT
@@ -173,7 +205,7 @@
               <a href="https://www.adafruit.com/product/1463"><li>NeoPixel Ring - $9.95</li></a>
               <li>LEDs, Resistors and Wires - Provided in lab</li> -->
           </ul>
-          <h3>Total: $10</h3>
+          <h4>Total: $10</h4>
       </div>
       <hr>
       <div style="font-size:18px">
@@ -183,7 +215,7 @@
           <a href="https://docs.opencv.org/3.4/d9/d61/tutorial_py_morphological_ops.html">OpenCV morphological transformations</a><br>
           <a href="http://abyz.co.uk/rpi/pigpio/">Pigpio Library</a><br>
           <a href="https://www.opencv-srf.com/2010/09/object-detection-using-color-seperation.html">OpenCV object tracking code</a><br>
-          <a href="https://www.geeksforgeeks.org/multiple-color-detection-in-real-time-using-python-opencv/#">OpenCV Color detection code</a><br>\
+          <a href="https://www.geeksforgeeks.org/multiple-color-detection-in-real-time-using-python-opencv/#">OpenCV Color detection code</a><br>
           <a href="https://sourceforge.net/p/raspberry-gpio-python/wiki/Home/">Standard Servo Documentation</a><br>
 
           
