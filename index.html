@@ -96,9 +96,9 @@
           <div class="col-md-8" style="font-size:18px;">
           <h2> Objective</h2>
           <ul>
-              <li>to create a robotic arm that used machine learning to identify different colored “fruits” (colored puff balls) and sort them into bins.</li>
-                <!-- <li>some other important objectives.</li>
-            <li>some not-that-important objectives.</li> -->
+              <li>to create a robotic arm to identify different colored “fruits” (colored puff balls) and sort them into bins.</li>
+                <li>control mechanical arm using inverse kinematics </li>
+            <li>use OpenCV + bounding box algorithm for identification of fruits</li>
           </ul>
           </div>
       </div>
@@ -107,9 +107,7 @@
 
       <div style="text-align:center;">
         <h2>Design + Testing</h2>
-        <p style="text-align: justify; padding: 0px 30px;">
-
-          
+        <p style="text-align: left; padding: 0px 30px;">
 
           After having a rough idea and sketch of what we were going to build, our project went 
           through different stages of design and testing that are outlined in the phases below.
@@ -119,8 +117,7 @@
         <h3>Phase I: MeArm Robot Assembly & Servo Testing</h3>
         <p style="text-align: justify; padding: 0px 30px;">
 
-
-          <p>
+          <p style="text-align: left; padding: 0px 30px;">
             To enable our picking mechanism, we decided to use the MeArm Robot v1.0 kit. We chose the MeArm robot design 
           because it is a simple and sturdy enough structure for the purpose of our project, which used colored small, 
           fluffy, light-weight pom poms to represent different types of fruits. The arm is designed with three Degrees 
@@ -133,7 +130,7 @@
             <img src="pics/firstarm.png" alt="..." width="20%" />
         </p>
 
-          <p>
+        <p style="text-align: left; padding: 0px 30px;">
             After consultation with Prof. Skovira, we were able to acquire the MeArm robot kit from a previous project that 
           used a similar design but was missing a gripper, which we were then able to obtain through laser-cutting a 
           plastic sheet using available open-source CAD design for the v1.0 kit. Since most of the arm was already 
@@ -147,7 +144,7 @@
           <p style="text-align: justify; padding: 0px 30px;">
 
   
-            <p>
+            <p style="text-align: left; padding: 0px 30px;">
               Since our project required the arm to move around, we needed to attach the robot base to a heavier 
               base to keep it stable during implementation; therefore, we screwed the base to the edge of a 
               rectangular piece of wood, which also provided an arena where we could place the fruits and buckets 
@@ -161,7 +158,7 @@
 
            
             <p style="text-align: justify; padding: 0px 30px;">
-            <p>
+              <p style="text-align: left; padding: 0px 30px;">
               Since the OpenCV color HSV masks we created for the fruit colors were tested on a white background, 
               we painted the testing ground white to enable accurate color detection. We then tested the 
               color_detection.py code to ensure it worked as expected and adjusted accordingly for accurate results.
