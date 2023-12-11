@@ -1,49 +1,4 @@
----
-layout: page
-title: The Fuzzy Fruit Picker (Crabby)
----
-
-Mattie Lee (mll264), Eshita Sangani (ens57), Janeth Manyalla (jim59)
-
-* The objective of our final project was to create a robotic arm that used machine learning to identify different colored “fruits” (colored puff balls) and sort them into bins. 
-
-## Project Video
-
-## Introduction
-
-## Design and Testing
-
-## Results
-
-## Conclusion
-
-## Future Work
-
-## Budget
-
-* Raspberry Pi 4
-* Adafruit PiTFT
-* [MeArm Robot Arm](https://www.instructables.com/MeArm-Robot-Arm-Your-Robot-V10/)
-* [Raspberry Pi Camera Module]https://www.adafruit.com/product/5658
-* Raspberry PI B+ GPIO Adapter Plate 40-Pin for Breadboard Expansion Board
-* GPIO Ribbon Cable
-* 4 standard servos
-* 2 Breadboards
-* [Bag of Fuzzy Balls](https://www.amazon.com/WAU-Crafts-100-Pieces-Multicolored/dp/B086ZZXVQD/ref=sr_1_8?crid=2CSQ0AZD8E8IS&keywords=pompoms&qid=1702185022&sprefix=pompoms%2Caps%2C99&sr=8-8)
-* Resistors (10kΩ + 1kΩ)
-* Wires
-* Wooden structure
-
-## References
-
-* [MeArm Robot Arm Instructable](https://www.instructables.com/MeArm-Robot-Arm-Your-Robot-V10/)
-* [Mearm inverse kinematics code](https://github.com/aquila12/me-arm-ik)
-* [OpenCV morphological transformations](https://docs.opencv.org/3.4/d9/d61/tutorial_py_morphological_ops.html)
-* [OpenCV Color detection code](https://www.geeksforgeeks.org/multiple-color-detection-in-real-time-using-python-opencv/#)
-* [OpenCV object tracking code](https://www.opencv-srf.com/2010/09/object-detection-using-color-seperation.html)
-
-
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -86,7 +41,7 @@ Mattie Lee (mll264), Eshita Sangani (ens57), Janeth Manyalla (jim59)
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">The Fuzzy Fruit Picker (aka Crabby)</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -105,8 +60,9 @@ Mattie Lee (mll264), Eshita Sangani (ens57), Janeth Manyalla (jim59)
     <div class="container">
 
       <div class="starter-template">
-        <h1>Awesome ECE5725 Project</h1>
-        <p class="lead">Really Awesome<br>A Project By Jane Doe.</p>
+        <h1>Fuzzy Fruit Picker</h1>
+        <p class="lead"><br>Mattie Lee (mll264), Eshita Sangani (ens57), Janeth Manyalla (jim59)
+        </p>
       </div>
 
       <hr>
@@ -119,22 +75,40 @@ Mattie Lee (mll264), Eshita Sangani (ens57), Janeth Manyalla (jim59)
 
       <div style="text-align:center;">
               <h2>Introduction</h2>
-              <p style="text-align: left;padding: 0px 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem nulla, consectetur at leo vel, pretium bibendum nisl. Cras blandit quam a enim ultrices, eu convallis enim posuere. Donec eleifend enim sed purus consectetur, vitae cursus lectus varius. Vivamus consectetur felis nec est venenatis posuere. Phasellus vitae aliquet erat. In laoreet lacinia mollis. Quisque iaculis nisl fermentum pharetra lobortis. Donec rhoncus dui sem, ac molestie leo tristique vel. Phasellus in nibh feugiat, fringilla lectus in, elementum magna. Etiam quis dui condimentum, tempus ex in, dapibus est. Cras ut congue augue. Donec ac enim ex. Ut id tristique risus, vel porttitor quam. Sed ultricies enim eu nibh porttitor, vel sodales enim feugiat. Fusce volutpat venenatis magna ac ultrices. Curabitur eget urna ut nulla mattis convallis non eu diam.</p>
+              <p style="text-align: left;padding: 0px 30px;">
+
+                Using a Raspberry Pi, this project utilizes the PiCamera for color detection of various fruits 
+                (as puff balls) using OpenCV. Once the fruit is identified, the meArm robotic arm uses inverse 
+                kinematics to sort them into different bins, by enabling precise control of its servo motors. 
+                The code also incorporates GPIO event handling, allowing the user to exit the program or shut 
+                down the Raspberry Pi using external buttons.
+
+              </p>
       </div>
 
     <hr id='obj'>
 
       <div class="row">
           <div class="col-md-4" style="text-align:center;">
-          <img class="img-rounded" src="pics/1.jpg" alt="Generic placeholder image" width="240" height="240">
+          <!-- <img class="img-rounded" src="pics/1.jpg" alt="Generic placeholder image" width="240" height="240"> -->
           </div>
           <div class="col-md-8" style="font-size:18px;">
-          <h2>Project Objective:</h2>
-          <ul>
+          <h2>Design and Testing</h2>
+
+          <p style="text-align: left;padding: 0px 30px;">
+
+            Using a Raspberry Pi, this project utilizes the PiCamera for color detection of various fruits 
+            (as puff balls) using OpenCV. Once the fruit is identified, the meArm robotic arm uses inverse 
+            kinematics to sort them into different bins, by enabling precise control of its servo motors. 
+            The code also incorporates GPIO event handling, allowing the user to exit the program or shut 
+            down the Raspberry Pi using external buttons.
+
+          </p>
+          <!-- <ul>
               <li>some important objectives.some important objectives.some important objectives.some important objectives.</li>
                 <li>some other important objectives.</li>
             <li>some not-that-important objectives.</li>
-          </ul>
+          </ul> -->
           </div>
       </div>
 
@@ -142,28 +116,28 @@ Mattie Lee (mll264), Eshita Sangani (ens57), Janeth Manyalla (jim59)
 
       <div style="text-align:center;">
               <h2>Design</h2>
-              <p style="text-align: left;padding: 0px 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem nulla, consectetur at leo vel, pretium bibendum nisl. Cras blandit quam a enim ultrices, eu convallis enim posuere. Donec eleifend enim sed purus consectetur, vitae cursus lectus varius. Vivamus consectetur felis nec est venenatis posuere. Phasellus vitae aliquet erat. In laoreet lacinia mollis. Quisque iaculis nisl fermentum pharetra lobortis. Donec rhoncus dui sem, ac molestie leo tristique vel. Phasellus in nibh feugiat, fringilla lectus in, elementum magna. Etiam quis dui condimentum, tempus ex in, dapibus est. Cras ut congue augue. Donec ac enim ex. Ut id tristique risus, vel porttitor quam. Sed ultricies enim eu nibh porttitor, vel sodales enim feugiat. Fusce volutpat venenatis magna ac ultrices. Curabitur eget urna ut nulla mattis convallis non eu diam.</p>
+              <p style="text-align: left;padding: 0px 30px;">L ex. qudiam.</p>
       </div>
 
     <hr id='drawings'>
 
       <div style="text-align:center;">
               <h2>Drawings</h2>
-              <p style="text-align: left;padding: 0px 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem nulla, consectetur at leo vel, pretium bibendum nisl. Cras blandit quam a enim ultrices, eu convallis enim posuere. Donec eleifend enim sed purus consectetur, vitae cursus lectus varius. Vivamus consectetur felis nec est venenatis posuere. Phasellus vitae aliquet erat. In laoreet lacinia mollis. Quisque iaculis nisl fermentum pharetra lobortis. Donec rhoncus dui sem, ac molestie leo tristique vel. Phasellus in nibh feugiat, fringilla lectus in, elementum magna. Etiam quis dui condimentum, tempus ex in, dapibus est. Cras ut congue augue. Donec ac enim ex. Ut id tristique risus, vel porttitor quam. Sed ultricies enim eu nibh porttitor, vel sodales enim feugiat. Fusce volutpat venenatis magna ac ultrices. Curabitur eget urna ut nulla mattis convallis non eu diam.</p>
+              <p style="text-align: left;padding: 0px 30px;">TEXT</p>
       </div>
 
     <hr id='testing'>
 
       <div style="text-align:center;">
               <h2>Testing</h2>
-              <p style="text-align: left;padding: 0px 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem nulla, consectetur at leo vel, pretium bibendum nisl. Cras blandit quam a enim ultrices, eu convallis enim posuere. Donec eleifend enim sed purus consectetur, vitae cursus lectus varius. Vivamus consectetur felis nec est venenatis posuere. Phasellus vitae aliquet erat. In laoreet lacinia mollis. Quisque iaculis nisl fermentum pharetra lobortis. Donec rhoncus dui sem, ac molestie leo tristique vel. Phasellus in nibh feugiat, fringilla lectus in, elementum magna. Etiam quis dui condimentum, tempus ex in, dapibus est. Cras ut congue augue. Donec ac enim ex. Ut id tristique risus, vel porttitor quam. Sed ultricies enim eu nibh porttitor, vel sodales enim feugiat. Fusce volutpat venenatis magna ac ultrices. Curabitur eget urna ut nulla mattis convallis non eu diam.</p>
+              <p style="text-align: left;padding: 0px 30px;">TEXT</p>
       </div>
 
     <hr id='result'>
 
       <div style="text-align:center;">
               <h2>Result</h2>
-              <p style="text-align: left;padding: 0px 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem nulla, consectetur at leo vel, pretium bibendum nisl. Cras blandit quam a enim ultrices, eu convallis enim posuere. Donec eleifend enim sed purus consectetur, vitae cursus lectus varius. Vivamus consectetur felis nec est venenatis posuere. Phasellus vitae aliquet erat. In laoreet lacinia mollis. Quisque iaculis nisl fermentum pharetra lobortis. Donec rhoncus dui sem, ac molestie leo tristique vel. Phasellus in nibh feugiat, fringilla lectus in, elementum magna. Etiam quis dui condimentum, tempus ex in, dapibus est. Cras ut congue augue. Donec ac enim ex. Ut id tristique risus, vel porttitor quam. Sed ultricies enim eu nibh porttitor, vel sodales enim feugiat. Fusce volutpat venenatis magna ac ultrices. Curabitur eget urna ut nulla mattis convallis non eu diam.</p>
+              <p style="text-align: left;padding: 0px 30px;">TEXT</p>
       </div>
 
     <hr>
@@ -174,39 +148,59 @@ Mattie Lee (mll264), Eshita Sangani (ens57), Janeth Manyalla (jim59)
               <img class="img-rounded" src="pics/group.jpg" alt="Generic placeholder image" style="width:80%;">
               <h4>Project group picture</h4>
           </div>
-          <div class="col-md-6" style="font-size:16px">
+          <div class="col-md-6" style="font-size:14px">
               <img class="img-rounded" src="pics/a.png" alt="Generic placeholder image" width="240" height="240">
-              <h3>Rick</h3>
-              <p class="lead">netid@cornell.edu</p>
-              <p>Designed the overall software architecture (Just being himself).
+              <h3>Eshita</h3>
+              <p class="lead">ens57@cornell.edu</p>
+              <p>TEXT 
           </div>
-          <div class="col-md-6" style="font-size:16px">
+          <div class="col-md-6" style="font-size:14px">
               <img class="img-rounded" src="pics/b.png" alt="Generic placeholder image" width="240" height="240">
-              <h3>Morty</h3>
-              <p class="lead">netid@cornell.edu</p>
-              <p>Tested the overall system.
+              <h3>Mattie</h3>
+              <p class="lead">mll264@cornell.edu</p>
+              <p>TEXT
           </div>
+          <div class="col-md-6" style="font-size:14px">
+            <img class="img-rounded" src="pics/a.png" alt="Generic placeholder image" width="240" height="240">
+            <h3>Janeth</h3>
+            <p class="lead">jim59@cornell.edu</p>
+            <p>TEXT
+        </div> 
       </div>
-
     <hr>
       <div style="font-size:18px">
           <h2>Parts List</h2>
           <ul>
-              <li>Raspberry Pi $35.00</li>
-              <li>Raspberry Pi Camera V2 $25.00</li>
+              <li>Raspberry Pi 4</li>
+              <li>Adafruit PiTFT</li>
+              <li>MeArm Robot Arm</li>
+              <li>Raspberry Pi Camera Module</li>
+              <li>GPIO Ribbon Cable</li>
+              <li>4 standard high torque servos</li>
+              <li>2 Breadboards</li>
+              <li>Raspberry PI B+ GPIO Adapter Plate 40-Pin for Breadboard Expansion Board</li>
+              <li>Bag of Fuzzy Balls ($10)</li>
+              <li>Resistors (10kΩ + 1kΩ) + Wires</li>
+              <li>Wooden structure</li>
+              <!-- <li>Raspberry Pi Camera V2 $25.00</li>
               <a href="https://www.adafruit.com/product/1463"><li>NeoPixel Ring - $9.95</li></a>
-              <li>LEDs, Resistors and Wires - Provided in lab</li>
+              <li>LEDs, Resistors and Wires - Provided in lab</li> -->
           </ul>
-          <h3>Total: $69.95</h3>
+          <h3>Total: $10</h3>
       </div>
       <hr>
       <div style="font-size:18px">
           <h2>References</h2>
-          <a href="https://picamera.readthedocs.io/">PiCamera Document</a><br>
-          <a href="http://www.micropik.com/PDF/SG90Servo.pdf">Tower Pro Servo Datasheet</a><br>
-          <a href="http://getbootstrap.com/">Bootstrap</a><br>
+          <a href="https://www.instructables.com/MeArm-Robot-Arm-Your-Robot-V10/">MeArm Robot Arm Instructable</a><br>
+          <a href="https://github.com/aquila12/me-arm-ik">MeArm inverse kinematics code</a><br>
+          <a href="https://docs.opencv.org/3.4/d9/d61/tutorial_py_morphological_ops.html">OpenCV morphological transformations</a><br>
           <a href="http://abyz.co.uk/rpi/pigpio/">Pigpio Library</a><br>
-          <a href="https://sourceforge.net/p/raspberry-gpio-python/wiki/Home/">R-Pi GPIO Document</a><br>
+          <a href="https://www.opencv-srf.com/2010/09/object-detection-using-color-seperation.html">OpenCV object tracking code</a><br>
+          <a href="https://www.geeksforgeeks.org/multiple-color-detection-in-real-time-using-python-opencv/#">OpenCV Color detection code</a><br>\
+          <a href="https://sourceforge.net/p/raspberry-gpio-python/wiki/Home/">Standard Servo Documentation</a><br>
+
+          
+          
 
       </div>
 
@@ -236,4 +230,4 @@ int main(){
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
   </body>
-</html> -->
+</html>
