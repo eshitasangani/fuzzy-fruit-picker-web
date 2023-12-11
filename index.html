@@ -73,24 +73,24 @@
 
       <hr id="intro">
 
-      <div style="text-align:center;">
-              <h2>Introduction</h2>
-              <p style="text-align: left;padding: 0px 30px;">
+      <!-- <div style="text-align:center;"> -->
+          <h2>Introduction</h2>
+          <p style="text-align: left;padding: 0px 30px;">
 
-                Using a Raspberry Pi, this project utilizes the PiCamera for color detection of various fruits 
-                (as puff balls) using OpenCV. Once the fruit is identified, the meArm robotic arm uses inverse 
-                kinematics to sort them into different bins, by enabling precise control of its servo motors. 
-                The code also incorporates GPIO event handling, allowing the user to exit the program or shut 
-                down the Raspberry Pi using external buttons.
+            Using a Raspberry Pi, this project utilizes the PiCamera for color detection of various fruits 
+            (as puff balls) using OpenCV. Once the fruit is identified, the meArm robotic arm uses inverse 
+            kinematics to sort them into different bins, by enabling precise control of its servo motors. 
+            The code also incorporates GPIO event handling, allowing the user to exit the program or shut 
+            down the Raspberry Pi using external buttons.
 
               </p>
-      </div>
+      <!-- </div> -->
 
       <hr id='obj'>
 
       <div class="row">
           <div class="col-md-4" style="text-align:center;">
-          <img class="img-rounded" src="pics/fuzzy.jpg" alt="Generic placeholder image" width="240" height="240">
+          <img class="img-rounded" src="pics/fuzzy.png" alt="Generic placeholder image" width="240" height="240">
           </div>
           <div class="col-md-8" style="font-size:18px;">
           <h2>Project Objective:</h2>
@@ -105,7 +105,7 @@
       <hr id="design">
 
       <div style="text-align:center;">
-        <h2>Design</h2>
+        <h2>Design + Testing</h2>
         <p style="text-align: left;padding: 0px 30px;">
 
           After having a rough idea and sketch of what we were going to build, our project went 
@@ -125,6 +125,10 @@
           We used four standard servo motors with an angle range from (-π, π) radians for the three pivots and the gripper. 
           </p>
 
+          <p> 
+            <img src="pics/firstarm.png" alt="..." width="55%" />
+        </p>
+
           <p>
             After consultation with Prof. Skovira, we were able to acquire the MeArm robot kit from a previous project that 
           used a similar design but was missing a gripper, which we were then able to obtain through laser-cutting a 
@@ -134,16 +138,46 @@
           the servo positions to particular angle degrees to ensure that the arm does not stretch and withdraw that it 
           collides with its base or other areas beyond its reach.
           </p>
+
+          <h3>Phase II: Designing & constructing the testing environment</h3>
+          <p style="text-align: left;padding: 0px 30px;">
+  
+            <p>
+              Since our project required the arm to move around, we needed to attach the robot base to a heavier 
+              base to keep it stable during implementation; therefore, we screwed the base to the edge of a 
+              rectangular piece of wood, which also provided an arena where we could place the fruits and buckets 
+              that the fruits will go into when sorted. For fruit detection, we used a Raspberry Pi Camera module 
+              that needed to be placed at an overhead position to capture the color and position of the fruits on 
+              the testing space. For that, we used a vertical wooden structure that was placed some distance in front 
+              of the arm position and attached a horizontal overhang that we used to hold the camera below and the 
+              raspberry pi, battery pack (when needed), and breadboard with circuit connections on top. 
+
+            </p>
+
+           
+  
+            <p>
+              Since the OpenCV color HSV masks we created for the fruit colors were tested on a white background, 
+              we painted the testing ground white to enable accurate color detection. We then tested the 
+              color_detection.py code to ensure it worked as expected and adjusted accordingly for accurate results.
+
+            </p>
           
         </p>
+
+
+
+
       </div>
 
-    <hr id='drawings'>
+
+
+    <!-- <hr id='drawings'>
 
       <div style="text-align:center;">
               <h2>Drawings</h2>
               <p style="text-align: left;padding: 0px 30px;">TEXT</p>
-      </div>
+      </div> -->
 
     <hr id='testing'>
 
