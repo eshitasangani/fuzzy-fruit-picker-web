@@ -118,3 +118,13 @@ img{
     color:#333;
 
 }
+
+.configs{
+    display:flex;
+    justify-content: center;
+}
+.configs img{
+    flex:1;
+    margin: 1vw;
+    width: 20%;
+}
